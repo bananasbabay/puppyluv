@@ -316,3 +316,40 @@ md-progress-linear.md-default-theme .md-bar, md-progress-linear .md-bar {
   opacity: 1;
 }
 
+
+.container-fluid, .mypage {
+   background: url('../assets/Charlie.jpg'); 
+   background-position: center center; 
+   background-repeat: no-repeat; 
+   background-attachment: fixed;
+   background-size: cover;
+   box-shadow: rgba(0,0,0,.4); 
+}
+
+input {
+  height: 45px;
+  width: 200px;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+
+a {
+  font-size: 30px;
+  margin-left: 50px;
+
+}
+
+.btn-lg {
+  margin-left: 45px;
+  margin-top: 10px;
+
+}
+
+.box {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  left: 40%;
+  top: 20%;
+}
+

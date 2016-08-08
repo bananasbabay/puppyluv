@@ -1,9 +1,8 @@
 angular.module('login',[])
-.config(function($stateProvider){
-  $stateProvider
+.config(function($routeProvider){
+  $routeProvider
   // the state will go on the html that you want route the user.
-  .state('login', {
-    url: '/login',
+  .when('/#/login', {
     templateUrl: 'views/signin.html',
     controller: function($scope, $http, $location, $window){
         
@@ -14,7 +13,7 @@ angular.module('login',[])
         };
           $http({
             method: 'POST',
-            url: '/login',
+            url: '/#/login',
             data: $scope.user
           }).then(function(res){
             $window.localStorage.setItem('puppylove.login', res.data.token);
@@ -31,3 +30,4 @@ angular.module('login',[])
     controllerAs: 'LoginCtrl'
   });
 })
+
