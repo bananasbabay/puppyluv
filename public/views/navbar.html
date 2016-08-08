@@ -1,0 +1,10 @@
+<md-toolbar id="navbar" ng-cloak>
+  <div class="md-toolbar-tools">
+    <md-button id="navbar-brand" class="no-transform" md-no-ink ui-sref="home">home</md-button>
+      <div flex></div>
+     <md-button id="navbar-brand" class="no-transform" md-no-ink ui-sref="profile">profile</md-button>
+    <div flex></div>
+     <md-button id="navbar-brand" class="no-transform" md-no-ink ui-sref="chat">chat</md-button>
+    <md-button id="navbar-button" md-no-ink ng-if="isLoggedIn()" ng-click="logOutUser()">&nbsp; Log Out &nbsp;</md-button>
+  </div>
+</md-toolbar>

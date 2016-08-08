@@ -1,1 +1,288 @@
 /* styles */
+/*color palette
+  #F5AB99 - tropical pink
+  #FEB47B - liquid sunset
+  #FF7E5F - heatwave
+  #765285 - paradise
+  #351C4D - nightfall
+*/
+
+#auth {
+  border: none;
+}
+
+@media screen and (max-width: 740px) { 
+  #auth button {
+    width: 100%;
+  }
+}
+
+
+html, body {
+  height: 100%;
+}
+
+md-content {
+  height: 100%;
+}
+
+/*nav bar*/
+
+#navbar {
+  background-color: #000000;
+}
+
+.navbar-header{
+  background-color: #00C176;
+}
+
+
+.no-transform {
+  text-transform: none;
+}
+
+#navbar-brand {
+  font-size: 1em;
+  padding-left: 1.5em;
+  cursor: pointer;
+}
+
+#navbar-brand:hover {
+  background-color: inherit;
+}
+
+#navbar-button {
+  font-size: 0.6em;
+  border: 1px solid #FFFFFF;
+  border-radius: 2em;
+  margin-right: 1em;
+}
+
+#navbar-brand:hover {
+  background-color: inherit;
+}
+
+/*login page*/
+
+.button {
+  border-radius: 2em;
+  color: #FFFFFF;
+  width: 20em;
+  margin: auto;
+}
+
+.button span {
+  color: #FFFFFF;
+}
+
+.button:hover {
+  opacity: 0.7;
+}
+
+#facebook-btn {
+  background-color: #3B5998;
+}
+
+#twitter-btn {
+  background-color: #4183c4;
+}
+
+#github-btn {
+  background-color: #333333;
+}
+
+#google-btn {
+  background-color: #d50f25;
+}
+
+#btn-divider {
+  text-align: center;
+}
+
+#guest-btn {
+  background-color: #765285;
+}
+#password-btn {
+  background-color: #FEB47B;
+}
+
+/*home page*/
+
+.header {
+  color: #351F39;
+  font-size: 3em; 
+  font-weight: 700; 
+  text-align: center; 
+  padding-top: 0.5em;
+  padding-bottom: 0.1em;
+}
+
+#results-for {
+  color: #351F39;
+  font-weight: 600;
+  margin: 0;
+}
+
+md-input-container {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  height: 32px;
+}
+
+#query-results-container {
+  height: 400px;
+  overflow-y: scroll;
+}
+
+#query-results {
+  background: #FF7E5F;
+  color: #FFFFFF;
+  margin: 0 auto; 
+  cursor: pointer;
+  border-bottom: 1px solid #765285;
+}
+
+#img-query-results {
+  height: 75px;
+  width: 75px;
+}
+
+#name-query-results {
+  text-align: center; 
+  margin: 0;
+  font-size: 1.75em; 
+  font-weight: 700;
+  outline: none;
+}
+
+.results-margin {
+  margin-top: -19px;
+}
+
+/*artist page*/
+
+#artist-view-container {
+  height: 100%;
+}
+
+#current-artist-container {
+  background-color: #000000;
+  width: auto;
+  opacity: 0.88;
+}
+
+#artist-info {
+  padding-left: 1.5em;
+}
+
+#artist-img {
+  outline: none;
+  height: 300px;
+  width: 300px;
+  border-radius: 1em;
+}
+
+#artist-img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#artist-name {
+  font-size: 3em;
+  font-weight: 700;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+#popularity-meter {
+  padding-left: 0.5em;
+}
+
+md-progress-linear.md-default-theme .md-bar, md-progress-linear .md-bar {
+  background-color: #FF7E5F;
+}
+
+#trending-tracks-container {
+}
+
+#trendin-tracks-container img:hover {
+  opacity: 0;
+}
+
+#track-container {
+  outline: none;
+}
+
+#trending-track {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #FFFFFF;
+  opacity: 0.6;
+  outline: none;
+}
+
+#trending-track-img {
+  height: 50px;
+  width: 50px;
+  margin-left: 0.5em;
+  margin-right: 1em;
+}
+
+#trending-track-img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#current-track-details {
+  padding: 3em;
+  margin-top: 5em;
+  width: 100%;  
+}
+
+#current-track-name {
+  font-size: 2em;
+  font-weight: 600;
+  opacity: 0.7;
+  color: #FFFFFF;
+}
+
+#current-album {
+  font-size: 1em;
+  font-weight: 500;
+  color: #FFFFFF;
+  opacity: 0.5;
+  padding-bottom: 0.5em;
+}
+
+#related-artists-container {
+  cursor: pointer;
+}
+
+#related-artist-container {
+  background-color: #000000;
+  opacity: 0.88;
+  border-top: 2px solid  #F5AB99;
+  border-left: 2px solid  #F5AB99;
+  border-bottom: 2px solid  #F5AB99;
+}
+
+#related-artist-name {
+  color: #FFFFFF;
+  font-size: 1.5em;
+  font-weight: 600;
+  opacity: 0.7;
+  text-overflow: ellipsis;
+}
+
+#related-img {
+  height: 100px;
+  width: 100px;
+  opacity: 0.7;
+  filter: grayscale(100%);
+  border-radius: 1em;
+}
+
+#related-img:hover {
+  opacity: 1;
+}
+
