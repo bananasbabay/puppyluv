@@ -2,9 +2,12 @@ angular.module('MainController', ['OwnerService']).controller('MainCtrl', functi
 
     $scope.tagline = '';
 
-    Owner.get().then(function(data){
-      console.log(data)
+  Owner.get().then(function(data){
+      // console.log(data)
       $scope.owners = data.data;
     })
 
+  $scope.delete = function(){
+    Owner.delete(this.owner._id);
+  }
 });

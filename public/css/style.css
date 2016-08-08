@@ -26,6 +26,20 @@ md-content {
   height: 100%;
 }
 
+/*form*/
+.form ul, .form li{
+  list-style-type: none;
+}
+.form li{
+  padding: 8px 0;
+}
+/*end form*/
+
+.ng-scope{
+  width: 100%;
+  float: left;
+}
+
 /*nav bar*/
 
 #navbar {
@@ -36,6 +50,14 @@ md-content {
   background-color: #00C176;
 }
 
+.nav{
+  width: 100%;
+}
+
+.navButton{
+  list-style-type: none;
+  float: left;
+}
 
 .no-transform {
   text-transform: none;
@@ -147,14 +169,17 @@ md-input-container {
   width: 75px;
 }
 
-#name-query-results {
-  text-align: center; 
+.name-query-results {
+  text-align: left; 
   margin: 0;
-  font-size: 1.75em; 
+  font-size: 1em; 
   font-weight: 700;
   outline: none;
 }
 
+.name-query-results h2{
+  padding: 0 0 5px 0;
+}
 .results-margin {
   margin-top: -19px;
 }
