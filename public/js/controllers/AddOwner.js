@@ -5,11 +5,18 @@ angular.module('AddOwnerController', ['OwnerService'])
 
   // empty object will contain user data
   $scope.owner
-  $scope.message = 'Submit your data';
+  $scope.message = '';
 
-  $scope.submit = function(){
-    console.log($scope.owner)
-    Owner.create($scope.owner);
+  $scope.submitOwner = function(){
+    $scope.firstName = '';
+    $scope.lastName = '';
+    $scope.age = '';
+    $scope.location = '';
+    $scope.favorite = '';
+    $scope.numberOfBreeds = '';
+    $scope.numberOfDogs = '';
+    Owner.create($scope.owner).success( function(){
+    console.log('User created!')
+  });
   }
-
 })

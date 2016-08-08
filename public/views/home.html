@@ -4,7 +4,6 @@
    <md-input-container flex="40" md-no-float>
   <input type="text" placeholder="Search for an owner" name="puppy" ng-model = "banana">
    </md-input-container>
-  <p class = "header">Name     Location     Favorite</p>
   <div class="owners" ng-repeat="owner in owners | filter:banana">
    <span class="name-query-results" layout-padding>
     <h2>{{owner.firstName}} 
