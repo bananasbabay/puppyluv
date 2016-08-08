@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 
 
 // connect our database
-mongoose.connect('mongodb://localhost/cbb');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/cbb');
 
 
 // Espress
