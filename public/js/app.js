@@ -35,6 +35,12 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     })
      .when('/chat', {
        templateUrl: 'views/chat.html'
+           })
+     .when('/login', {
+       templateUrl: 'views/signin.html'
+    })
+     .when('/signup', {
+       templateUrl: 'views/signup.html'
     })
     .otherwise({
      redirectTo: '/'

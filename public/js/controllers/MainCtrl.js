@@ -7,13 +7,7 @@ angular.module('MainController', ['OwnerService']).controller('MainCtrl', functi
       $scope.owners = data.data;
     })
 
-
-  $scope.delete = function($index){
-    // console.log(this);
-    // call the delete service
+  $scope.delete = function(){
     Owner.delete(this.owner._id);
-    
-    // remove the currently selected item from the dom
-    $scope.owners.splice(this.$index,1);
   }
 });
