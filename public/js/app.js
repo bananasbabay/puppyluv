@@ -30,6 +30,12 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
        templateUrl: 'views/dogs.html',
         controller: 'DogController'
     })
+     .when('/about', {
+       templateUrl: 'views/about.html'
+    })
+     .when('/chat', {
+       templateUrl: 'views/chat.html'
+    })
     .otherwise({
      redirectTo: '/'
     })
