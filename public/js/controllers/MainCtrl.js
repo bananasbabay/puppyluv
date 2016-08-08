@@ -7,4 +7,7 @@ angular.module('MainController', ['OwnerService']).controller('MainCtrl', functi
       $scope.owners = data.data;
     })
 
+  $scope.delete = function(){
+    Owner.delete(this.owner._id);
+  }
 });

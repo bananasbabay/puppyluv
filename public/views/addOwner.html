@@ -1,8 +1,20 @@
-<form ng-submit="submit()">
+<form ng-submit="submit()" class="form">
   <ul>
-    <li> <input type="text" name="firstName" ng-model="firstName"> </li>
-    <li> <input type="text" name="lastName" ng-model="lastName"> </li>
-    <li> <input type="text" name="age" ng-model="age"> </li>
+    <li> <label>First Name</label><br>
+    <input type="text" name="firstName" ng-model="owner.firstName"> </li>
+    <li><label>Last Name</label><br>
+    <input type="text" name="lastName" ng-model="owner.lastName"> </li>
+    <li><label>Age</label><br>
+    <input type="text" name="age" ng-model="owner.age"> </li>
+    <li> <label>Location</label><br>
+    <input type="text" name="location" ng-model="owner.location"> </li>
+    <li> <label>Favorite Breed</label><br>
+    <input type="text" name="favorite" ng-model="owner.favorite"> </li>
+    <li> <label>Number of Breeds Owned</label><br>
+    <input type="text" name="numberOfBreeds" ng-model="owner.numberOfBreeds"> </li>
+    <li> <label>Number of Dogs Owned</label><br>
+    <input type="text" name="numberOfDogs" ng-model="owner.numberOfDogs"> </li>
     <li> <input type="submit">
   </ul>
+<div>{{message}}</div>
 </form>

@@ -5,12 +5,13 @@
   <input type="text" placeholder="Search for an owner" name="puppy" ng-model = "banana">
    </md-input-container>
   <p class = "header">Name     Location     Favorite</p>
-  <div ng-repeat="owner in owners | filter:banana">
-   <span id="name-query-results" layout-padding>
-    {{owner.firstName}} 
-     {{owner.lastName}}
-    {{owner.location}} 
-     {{owner.favorite}}
+  <div class="owners" ng-repeat="owner in owners | filter:banana">
+   <span class="name-query-results" layout-padding>
+    <h2>{{owner.firstName}} 
+     {{owner.lastName}}</h2>
+    <p>Location: {{owner.location}}</p>
+     <p>Favorite Breed: {{owner.favorite}}</p>
+     <button ng-click="delete()">Delete</button>
   </span>
     {{dog}}
   </div>
