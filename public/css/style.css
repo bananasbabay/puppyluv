@@ -311,3 +311,6 @@ md-progress-linear.md-default-theme .md-bar, md-progress-linear .md-bar {
   opacity: 1;
 }
 
+
+.carddemoBasicUsage .card-media {
+  background-color: #999999; }
