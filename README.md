@@ -1,6 +1,6 @@
-[![Stories in Ready](https://badge.waffle.io/bananasbabay/greenfield.png?label=ready&title=Ready)](https://waffle.io/bananasbabay/greenfield)
-[![Stories in In Progress](https://badge.waffle.io/bananasbabay/greenfield.png?label=ready&title=InProgress)](https://waffle.io/bananasbabay/greenfield)
-[![Stories in Done](https://badge.waffle.io/bananasbabay/greenfield.png?label=ready&title=Done)](https://waffle.io/bananasbabay/greenfield)
+[![Stories in Ready](https://badge.waffle.io/bananasbabay/puppyluv.png?label=ready&title=Ready)](https://waffle.io/bananasbabay/greenfield)
+[![Stories in In Progress](https://badge.waffle.io/bananasbabay/puppyluv.png?label=ready&title=InProgress)](https://waffle.io/bananasbabay/greenfield)
+[![Stories in Done](https://badge.waffle.io/bananasbabay/puppyluv.png?label=ready&title=Done)](https://waffle.io/bananasbabay/greenfield)
 
 # Puppy Love
 
