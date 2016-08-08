@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 
 
 // connect our database
-mongoose.connect("mongodb://<dbuser>:<dbpassword>@ds145315.mlab.com:45315/heroku_44lg18lr" || 'mongodb://localhost/cbb');
+mongoose.connect("mongodb://puppy:love@ds145315.mlab.com:45315/heroku_44lg18lr" || 'mongodb://localhost/cbb');
 
 
 // Espress
