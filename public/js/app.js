@@ -1,6 +1,10 @@
 var app = angular.module('puppyLove', [
   'ngRoute',
   'OwnerService',
+  'ngMaterial',
+  'ngAnimate',
+  'ngAria',
+  'ngMessages',
   'MainController'
   ])
 
@@ -15,6 +19,13 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     .when('/owners', {
         templateUrl: 'views/owners.html',
         controller: 'OwnerController'
+    })
+    .when('/dogs', {
+       templateUrl: 'views/dogs.html',
+        controller: 'DogController'
+    })
+    .otherwise({
+     redirectTo: '/'
     })
 
 }]);

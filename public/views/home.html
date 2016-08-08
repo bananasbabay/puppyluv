@@ -1,8 +1,17 @@
 <div>
-  <h1>Welcome to Puppy Love!</h1>
+  <h1>Welcome to PuppyLove!</h1>
   <p>{{ tagline }}</p>
-  <input type="text" name="puppy">>
-  <div ng-repeat="owner in owners">
-    {{owner.age}}
+   <md-input-container flex="40" md-no-float>
+  <input type="text" placeholder="Search for an owner" name="puppy" ng-model = "banana">
+   </md-input-container>
+  <p class = "header">Name     Location     Favorite</p>
+  <div ng-repeat="owner in owners | filter:banana">
+   <span id="name-query-results" layout-padding>
+    {{owner.firstName}} 
+     {{owner.lastName}}
+    {{owner.location}} 
+     {{owner.favorite}}
+  </span>
+    {{dog}}
   </div>
 </div>

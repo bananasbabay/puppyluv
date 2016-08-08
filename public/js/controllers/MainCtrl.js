@@ -1,6 +1,6 @@
 angular.module('MainController', ['OwnerService']).controller('MainCtrl', function($scope, Owner) {
 
-    $scope.tagline = 'To the moon and back!';
+    $scope.tagline = '';
 
     Owner.get().then(function(data){
       console.log(data)
