@@ -23,4 +23,4 @@ angular.module('AddOwnerController', ['OwnerService'])
       console.log(error);
     });
   }
-})
+});

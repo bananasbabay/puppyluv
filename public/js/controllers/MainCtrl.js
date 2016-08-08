@@ -10,4 +10,4 @@ angular.module('MainController', ['OwnerService']).controller('MainCtrl', functi
   $scope.delete = function(){
     Owner.delete(this.owner._id);
   }
-});
+})
