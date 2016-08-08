@@ -3,7 +3,7 @@ angular.module('MainController', ['OwnerService']).controller('MainCtrl', functi
     $scope.tagline = '';
 
   Owner.get().then(function(data){
-      // console.log(data)
+      console.log(data.data)
       $scope.owners = data.data;
     })
 

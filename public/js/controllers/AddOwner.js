@@ -16,7 +16,11 @@ angular.module('AddOwnerController', ['OwnerService'])
     $scope.numberOfBreeds = '';
     $scope.numberOfDogs = '';
     Owner.create($scope.owner).success( function(){
-    console.log('User created!')
-  });
+      console.log('User created!');
+      $scope.owner = {};
+      $scope.message = 'Form has been submitted!';
+    }).error(function(error){
+      console.log(error);
+    });
   }
 })
