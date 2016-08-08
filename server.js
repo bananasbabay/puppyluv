@@ -20,8 +20,11 @@ app.use('/api', require('./routes/api'));
 
 app.use(express.static(__dirname + '/public'))
 
+var port = process.env.PORT || 3000;
+app.set('port', port);
+
 
 // Start server
-app.listen(3000, function(){
+app.listen(port, function(){
   console.log('Server is up and running');
 });
