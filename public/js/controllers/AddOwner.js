@@ -8,16 +8,14 @@ angular.module('AddOwnerController', ['OwnerService'])
   $scope.message = '';
 
   $scope.submitOwner = function(){
+    if($scope.owner.age)
+
     Owner.create($scope.owner).success( function(){
     console.log('User created!')
-      $scope.owner.firstName = '';
-      $scope.owner.lastName = '';
-      $scope.owner.age = '';
-      $scope.owner.location = '';
-      $scope.owner.favorite = '';
-      $scope.owner.numberOfBreeds = '';
-      $scope.owner.numberOfDogs = '';
+      $scope.owner = {};
       $scope.message = 'Form has been submitted!';
+  }).error(function(error){
+    console.log(error)
   });
   }
 })
