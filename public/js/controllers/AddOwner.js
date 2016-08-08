@@ -12,7 +12,7 @@ angular.module('AddOwnerController', ['OwnerService'])
 
     Owner.create($scope.owner).success( function(){
     console.log('User created!')
-      $scope.owner = {};
+      $scope.owner = {}
       $scope.message = 'Form has been submitted!';
   }).error(function(error){
     console.log(error)
