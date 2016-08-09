@@ -24,7 +24,7 @@
 
 ## Usage
 
->  Go to www.puppylove.com and create a profile for yourself and your dog! Once you have your profiles you are good to go.  You can click on our mascot charleys face and you will be taken to the first dog that appears in your set radius (50-5 miles)
+>  Go to www.puppylove.social and create a profile for yourself and your dog! Once you have your profiles you are good to go. You will be able to search by any attributes of other owners or other dogs! Have Fun!
 
 ## Requirements
 
@@ -47,11 +47,11 @@ bower install
 
 ## Build & Development
 
-Run `grunt` for building and `grunt serve` for preview.
+Run `npm install` and `bower install` for building and `node server.js` for preview.
 
 ## Testing
 
-Running `grunt test` will run the unit tests with karma.
+Running `test` will run the unit tests with karma.
 
 ### Roadmap
 
