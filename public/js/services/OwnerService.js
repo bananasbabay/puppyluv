@@ -5,6 +5,7 @@ angular.module('OwnerService', []).factory('Owner', ['$http', function($http) {
     get : function() {
       return $http.get('/api/owners');
     },
+    // call to create the owner
     create : function(ownerData) {
       return $http.post('/api/owners', ownerData);
     },
