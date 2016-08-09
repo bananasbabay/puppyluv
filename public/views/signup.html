@@ -1,0 +1,28 @@
+<div id="login" class="container-fluid">
+
+
+  <div class="login">
+    <div class="login-screen">
+      <div class="app-title">
+        <p class="logo"><strong>Sign Up</strong></p>
+      </div>
+
+      <div class="login-form">
+        <div class="control-group">
+        <input type="text" class="login-field" value="" placeholder="username" id="login-name" ng-model="username">
+        <label class="login-field-icon fui-user" for="login-name"></label>
+        </div>
+
+        <div class="control-group">
+        <input type="password" class="login-field" value="" placeholder="password" id="login-pass" ng-model="password">
+        <label class="login-field-icon fui-lock" for="login-pass"></label>
+        </div>
+
+        <md-button class="btnLS btn-primary btn-large btn-block" ng-click="submit(username, password)">Submit</md-button>
+         <div flex></div>
+        <md-button class="btnLS btn-primary btn-large btn-block" ui-sref="login">Back to Login</md-button>
+        
+      </div>
+    </div>
+  </div>
+</div>
