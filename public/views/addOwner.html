@@ -1,5 +1,6 @@
 <form ng-submit="submitOwner()" class="form">
   <ul>
+    <li><h3>About You:</h3></li>
     <li> <label>First Name</label><br>
     <input type="text" name="firstName" ng-model="owner.firstName"> </li>
     <li><label>Last Name</label><br>
@@ -14,7 +15,44 @@
     <input type="text" name="numberOfBreeds" ng-model="owner.numberOfBreeds"> </li>
     <li> <label>Number of Dogs Owned</label><br>
     <input type="text" name="numberOfDogs" ng-model="owner.numberOfDogs"> </li>
-    <li> <input type="submit">
+
+    <li><h3>About your dog:</h3></li>
+    <li>
+      <label>Dog's Name: </label><br>
+      <input type="text" name="dogsName" ng-model="owner.dogsName">
+    </li>
+    <li>
+      <label>Dog's Age</label><br>
+      <input type="text" name="dogsAge" ng-model="owner.dogsAge">
+    </li>
+    <li>
+      <label>Dog's Breed</label><br>
+      <input type="text" name="dogsBreed" ng-model="owner.dogsBreed">
+    </li>
+    <li>
+      <label>Dog's Sex</label><br>
+      <input type="text" name="dogsSex" ng-model="owner.dogsSex">
+    </li>
+    <li>
+      <label>Dog's Height</label><br>
+      <input type="text" name="dogsHeight" ng-model="owner.dogsHeight">
+    </li>
+    <li>
+      <label>Dog's Weight</label><br>
+      <input type="text" name="dogsWeight" ng-model="owner.dogsWeight">
+    </li>
+    <li>
+      <label>Dog's AKC Paperwork</label><br>
+      <input type="text" name="dogsAKC" ng-model="owner.dogsAKC">
+    </li>
+    <li>
+      <label>About your dog</label><br>
+      <textarea type="text-area" name="aboutDog" ng-model="owner.aboutDog"></textarea>
+    </li>
+
+
+
+    <li> <button class="btn waves-effect waves-light" type="submit" name="action">Submit </button>  </li>
   </ul>
 <div>{{message}}</div>
 </form>

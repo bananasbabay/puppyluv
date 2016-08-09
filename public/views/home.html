@@ -4,7 +4,44 @@
    <md-input-container flex="40" md-no-float>
   <input type="text" placeholder="Search for an owner" name="puppy" ng-model = "banana">
    </md-input-container>
-  <div class="owners" ng-repeat="owner in owners | filter:banana">
+  <md-content class="md-padding" layout-xs="column" layout="row">
+    <div flex-xs flex-gt-xs="50" layout="column">
+      <md-card md-theme-watch ng-repeat="owner in owners | filter:banana">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">{{owner.firstName}} {{owner.lastName}} & {{owner.dogsName}}</span>
+            <span class="md-subhead">{{owner.location}}</span>
+          </md-card-title-text>
+        </md-card-title>
+                <md-list flex>
+        <md-subheader class="md-no-sticky">About {{owner.dogsName}}</md-subheader><br>
+         <md-divider ></md-divider>
+        <md-list-item class="md-3-line" ng-click="null">
+          <div class="md-list-item-text" layout="column">
+            <h3>{{owner.dogsName}}</h3>
+            <p>{{owner.dogsSex}}</p>
+            <p>{{ owner.dogsBreed }}</p>
+            <p>{{ owner.location  }}</p>
+            <p>{{ owner.dogHeight }}</p>
+            <p>{{ owner.dogWeight }}</p>
+            <p>{{ owner.ACKPapers }}</p>
+            <p>{{ owner.aboutDog }}</p>
+          </div>
+        </md-list-item>
+        </md-list>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button ng-click="delete()">Delete</md-button>
+          <!-- <md-button>Action 2</md-button> -->
+        </md-card-actions>
+      </md-card>
+    </div>
+  </md-content>
+
+
+
+
+
+  <!-- <div class="owners" ng-repeat="owner in owners | filter:banana">
    <span class="name-query-results" layout-padding>
     <h2>{{owner.firstName}} 
      {{owner.lastName}}</h2>
@@ -13,5 +50,5 @@
      <md-button ng-click="delete()">Delete</md-button>
   </span>
     {{dog}}
-  </div>
+  </div> -->
 </div>
