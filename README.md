@@ -1,6 +1,6 @@
-[![Stories in Ready](https://badge.waffle.io/bananasbabay/puppyluv.png?label=ready&title=Ready)](https://waffle.io/bananasbabay/greenfield)
-[![Stories in In Progress](https://badge.waffle.io/bananasbabay/puppyluv.png?label=ready&title=InProgress)](https://waffle.io/bananasbabay/greenfield)
-[![Stories in Done](https://badge.waffle.io/bananasbabay/puppyluv.png?label=ready&title=Done)](https://waffle.io/bananasbabay/greenfield)
+[![Stories in Ready](https://badge.waffle.io/bananasbabay/puppyluv.png?label=ready&title=Ready)](https://waffle.io/bananasbabay/puppyluv)
+[![Stories in In Progress](https://badge.waffle.io/bananasbabay/puppyluv.png?label=ready&title=InProgress)](https://waffle.io/bananasbabay/puppyluv)
+[![Stories in Done](https://badge.waffle.io/bananasbabay/puppyluv.png?label=ready&title=Done)](https://waffle.io/bananasbabay/puppyluv)
 
 # Puppy Love
 
@@ -55,11 +55,11 @@ Running `grunt test` will run the unit tests with karma.
 
 ### Roadmap
 
-View the project roadmap [here](https://waffle.io/bananasbabay/greenfield)
+View the project roadmap [here](https://waffle.io/bananasbabay/puppyluv)
 
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://waffle.io/bananasbabay/greenfield) for contribution guidelines.
+See [CONTRIBUTING.md](https://waffle.io/bananasbabay/puppyluv) for contribution guidelines.
 
-[![Throughput Graph](https://graphs.waffle.io/bananasbabay/bananasbabay/throughput.svg)](https://waffle.io/bananasbabay/bananasbabay/metrics/throughput)
+[![Throughput Graph](https://graphs.waffle.io/bananasbabay/puppyluv/throughput.svg)](https://waffle.io/bananasbabay/puppyluv/metrics/throughput)
